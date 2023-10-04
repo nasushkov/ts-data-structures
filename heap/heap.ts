@@ -78,7 +78,7 @@ class Heap<T> {
         const res: T[] = [];
         
         for (let i = 1; i <= this.sz; i += 1) {
-            res.push(this.heap[i]);
+            res.push(this.heap[i]!);
         }
         
         return res;
